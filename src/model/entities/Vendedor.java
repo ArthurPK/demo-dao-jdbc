@@ -107,7 +107,4 @@ public class Vendedor implements Serializable{
 		return "Vendedor [id=" + id + ", nome=" + nome + ", email=" + email + ", dataAniversario=" + dataAniversario
 				+ ", baseSalary=" + baseSalary + ", departamento=" + departamento + "]";
 	}
-
-
-
 }
