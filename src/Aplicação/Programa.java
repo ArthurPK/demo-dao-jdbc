@@ -37,6 +37,12 @@ public class Programa {
 		Vendedor Novovendedor = new Vendedor(null, "Greg", "Greg@gmail.com", new Date(), 5500.00, departamento);
 		vendedorDao.Inserir(Novovendedor);
 		System.out.println("Inserido! novo id: "+ Novovendedor.getId());
+		
+		System.out.println("\n\n=== Teste 5:vendedor update ===");
+		vendedor = vendedorDao.EncontrarPorId(1);
+		vendedor.setNome("Marta");
+		vendedorDao.Update(vendedor);
+		System.out.println("atualizacao completa");
 	}
 
 }
