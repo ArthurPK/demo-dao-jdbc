@@ -24,6 +24,13 @@ public class Programa {
 		for(Vendedor x : list) {
 			System.out.println(x);
 		}
+		
+		System.out.println("\n\n=== Teste 3:vendedor procurar por todos ===");
+		list = vendedorDao.EncontrarTodos();
+		
+		for(Vendedor x : list) {
+			System.out.println(x);
+		}
 	}
 
 }
